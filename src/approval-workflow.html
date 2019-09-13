@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Useful meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="index, follow, noodp">
+        <meta name="googlebot" content="index, follow">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Procurement Portal / Bulk Order Pad</title>
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="../build/assets/css/style.min.css">
+    </head>
+    <body>
+
+        <div id="layout">
+            
+            <!-- Swipe -->
+            <div class="swipe swipe--category">
+                <div class="swipe__header">
+                    <div class="swipe__header-t">Category</div>
+                    <div class="swipe__close"></div>
+                </div>
+                <div class="swipe__body">
+                    <ul class="nav nav--category">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Dental Mouth Trays</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--active">Dental Mixing Pads</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Dental Tips</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swipe swipe--menu">
+                <div class="swipe__header">
+                    <div class="swipe__header-t">Username</div>
+                    <div class="swipe__close"></div>
+                </div>
+                <div class="swipe__body">
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--active">Catalog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Orders</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Awaiting Approval</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Company</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swipe swipe--order">
+                <div class="swipe__header">
+                    <div class="swipe__header-t">
+                        Order
+                        <a href="#" class="swipe__header-link">Remove all</a>
+                    </div>
+                    <div class="swipe__close"></div>
+                </div>
+                <div class="swipe__body">
+                    <div class="order">
+                        <div class="order__info">
+                            <div class="list list--total">
+                                <div class="list__item">
+                                    Subtotal <span class="list__count">$1,500.00</span>
+                                </div>
+                                <div class="list__item">
+                                    Shipping <span class="list__count free">Free</span>
+                                </div>
+                                <div class="list__item">
+                                    Total <span class="list__count">$1.500,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__item">   
+                            <a class="order__item-remove" href="#">Remove item</a>
+                            <div class="order__item-name">G61-50T38</div>
+                            <div class="order__item-brand">Brand name</div>
+                            <div class="order__item-model">Model: 0000 <span class="divider">|</span>SKU: 0000000</div>
+                            <div class="order__item-descr">Description item</div>
+                            <div class="order__item-other">
+                                <div class="order__item-price">$1,500.00</div>
+                                    <div class="input-group input-group--qty input-group--sm ml-auto">
+                                    <a href="#" class="btn btn--white">
+                                        <span class="btn__ico btn__ico--minus"></span>
+                                    </a>
+                                    <input type="text" class="input-group__input" value="2">
+                                    <a href="#" class="btn btn--white">
+                                        <span class="btn__ico btn__ico--plus"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn--lg btn--green btn--block mt-auto">Checkout</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Swipe -->
+
+            <!-- Header -->
+            <header class="header">
+                <div class="header-inner container">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="header-logo">Dentalmed</div>
+                        </div>
+                        <div class="col d-none d-lg-block header-nav">
+                            <ul class="nav">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Catalog</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Orders</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Awaiting Approval</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Company</a>
+                                </li>
+                                <li class="nav__item ml-auto">
+                                    <a href="#" class="nav__link">Username</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-auto d-block d-lg-none ml-auto">
+                            <div class="header-nav-mobile">
+                                <a class="header__link" href="#">Bulk Order</a>
+                                <a class="header-toggle" data-name="mobile-menu"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>            
+            <!-- End Header -->
+
+            <!-- Main -->
+            <main class="main container">
+                <div class="order">
+                    <h1>Aproval workflow</h1>
+                    <a href="#" class="btn btn--green mb-4">Upload workflow</a>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <colgroup>
+                                <col class="col-w-80">
+                                <col class="col-w-260">
+                                <col class="col-w-100">
+                                <col class="col-w-100">
+                                <col class="col-w-140">
+                                <col class="col-w-140">
+                                <col class="col-w-130">
+                                <col class="col-w-140">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Code</th>
+                                    <th>Status</th>
+                                    <th>Uploaded at</th>
+                                    <th>Activated by</th>
+                                    <th>Activated at</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a class="table__icon" href="#">
+                                            <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="Version-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="Aproval-workflow" transform="translate(-312.000000, -258.000000)" fill="#07B919">
+                                                        <path d="M322,276.5 C317.313,276.5 313.5,272.687 313.5,268 C313.5,263.566 316.914,259.919 321.25,259.538 L321.25,270.689 L319.53,268.97 C319.237,268.677 318.763,268.677 318.47,268.97 C318.177,269.263 318.177,269.737 318.47,270.03 L321.47,273.03 C321.616,273.177 321.808,273.25 322,273.25 C322.192,273.25 322.384,273.177 322.53,273.03 L325.53,270.03 C325.823,269.737 325.823,269.263 325.53,268.97 C325.237,268.677 324.763,268.677 324.47,268.97 L322.75,270.689 L322.75,259.538 C327.086,259.919 330.5,263.566 330.5,268 C330.5,272.687 326.687,276.5 322,276.5 M322,258 C316.486,258 312,262.486 312,268 C312,273.514 316.486,278 322,278 C327.514,278 332,273.514 332,268 C332,262.486 327.514,258 322,258" id="Fill-1" transform="translate(322.000000, 268.000000) rotate(-180.000000) translate(-322.000000, -268.000000) "></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <a class="table__icon" href="#">
+                                            <svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="Version-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                    <g id="Catalog" transform="translate(-1412.000000, -288.000000)" stroke="#FF3333" stroke-width="1.5">
+                                                        <g id="cart-trash-can-hover" transform="translate(1412.000000, 288.000000)">
+                                                            <path d="M15.25,6.25 L0.75,6.25 L0.75,2.75 L5.25,2.75 L6.25,0.75 L9.75,0.75 L10.75,2.75 L15.25,2.75 L15.25,6.25 Z M12.858,19.25 L3.141,19.25 C2.803,19.25 2.524,18.953 2.501,18.568 L1.75,6.25 L14.25,6.25 L13.5,18.568 C13.474,18.953 13.195,19.25 12.857,19.25 L12.858,19.25 Z" id="Shape"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                    <td>2 level wf</td>
+                                    <td>VF001</td>
+                                    <td>Active</td>
+                                    <td>10.10.2019</td>
+                                    <td>FD</td>
+                                    <td>05.22.2019</td>
+                                    <td>
+                                        <a href="#" class="table__icon">
+                                            <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="Version-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="Aproval-workflow" transform="translate(-1222.000000, -258.000000)" fill="#4DA0F7">
+                                                        <path d="M1232,276.5 C1227.313,276.5 1223.5,272.687 1223.5,268 C1223.5,263.566 1226.914,259.919 1231.25,259.538 L1231.25,270.689 L1229.53,268.97 C1229.237,268.677 1228.763,268.677 1228.47,268.97 C1228.177,269.263 1228.177,269.737 1228.47,270.03 L1231.47,273.03 C1231.616,273.177 1231.808,273.25 1232,273.25 C1232.192,273.25 1232.384,273.177 1232.53,273.03 L1235.53,270.03 C1235.823,269.737 1235.823,269.263 1235.53,268.97 C1235.237,268.677 1234.763,268.677 1234.47,268.97 L1232.75,270.689 L1232.75,259.538 C1237.086,259.919 1240.5,263.566 1240.5,268 C1240.5,272.687 1236.687,276.5 1232,276.5 M1232,258 C1226.486,258 1222,262.486 1222,268 C1222,273.514 1226.486,278 1232,278 C1237.514,278 1242,273.514 1242,268 C1242,262.486 1237.514,258 1232,258" id="Fill-1"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <a class="table__icon" href="#">
+                                            <svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="Version-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                    <g id="Catalog" transform="translate(-1412.000000, -288.000000)" stroke="#FF3333" stroke-width="1.5">
+                                                        <g id="cart-trash-can-hover" transform="translate(1412.000000, 288.000000)">
+                                                            <path d="M15.25,6.25 L0.75,6.25 L0.75,2.75 L5.25,2.75 L6.25,0.75 L9.75,0.75 L10.75,2.75 L15.25,2.75 L15.25,6.25 Z M12.858,19.25 L3.141,19.25 C2.803,19.25 2.524,18.953 2.501,18.568 L1.75,6.25 L14.25,6.25 L13.5,18.568 C13.474,18.953 13.195,19.25 12.857,19.25 L12.858,19.25 Z" id="Shape"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="form-switch">
+                                            <input type="checkbox" class="form-switch__input" id="sw-1" checked>
+                                            <label class="form-switch__label" for="sw-1"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="page-nav">
+                        <div class="row align-items-end justify-content-center">
+                            <div class="col-auto">
+                                <div class="page-nav__total">You've viewed 72 of 101 products</div>
+                                <div class="pagination">
+                                    <div class="pagination__item">
+                                        <a href="#" class="pagination__link pagination__link--active">1</a>
+                                    </div>
+                                    <div class="pagination__item">
+                                        <a href="#" class="pagination__link">2</a>
+                                    </div>
+                                    <div class="pagination__item">
+                                        <a href="#" class="pagination__link">3</a>
+                                    </div>
+                                    <div class="pagination__item pagination__item--next">
+                                        <a href="#" class="pagination__link">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto ml-sm-auto">
+                                <div class="page-nav__count">
+                                    Show
+                                    <div class="dropdown">
+                                        <div class="dropdown__toggle">30</div>
+                                        <div class="dropdown__menu dropdown__menu--up">
+                                            <a href="#" class="dropdown__menu-item">10</a>
+                                            <a href="#" class="dropdown__menu-item">20</a>
+                                            <a href="#" class="dropdown__menu-item">30</a>
+                                        </div>
+                                    </div>
+                                    Entries
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- End Main -->
+
+            <!-- Footer -->
+            <footer class="footer"></footer>
+            <!-- End Footer -->
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../build/assets/js/main.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Useful meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="index, follow, noodp">
+        <meta name="googlebot" content="index, follow">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Procurement Portal / Bulk Order Pad</title>
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="../build/assets/css/style.min.css">
+    </head>
+    <body>
+
+        <div id="layout">
+            
+            <!-- Swipe -->
+            <div class="swipe swipe--category">
+                <div class="swipe__header">
+                    <div class="swipe__header-t">Category</div>
+                    <div class="swipe__close"></div>
+                </div>
+                <div class="swipe__body">
+                    <ul class="nav nav--category">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Dental Mouth Trays</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--active">Dental Mixing Pads</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Dental Tips</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swipe swipe--menu">
+                <div class="swipe__header">
+                    <div class="swipe__header-t">Username</div>
+                    <div class="swipe__close"></div>
+                </div>
+                <div class="swipe__body">
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--active">Catalog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Orders</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Awaiting Approval</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Company</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swipe swipe--order">
+                <div class="swipe__header">
+                    <div class="swipe__header-t">
+                        Order
+                        <a href="#" class="swipe__header-link">Remove all</a>
+                    </div>
+                    <div class="swipe__close"></div>
+                </div>
+                <div class="swipe__body">
+                    <div class="order">
+                        <div class="order__info">
+                            <div class="list list--total">
+                                <div class="list__item">
+                                    Subtotal <span class="list__count">$1,500.00</span>
+                                </div>
+                                <div class="list__item">
+                                    Shipping <span class="list__count free">Free</span>
+                                </div>
+                                <div class="list__item">
+                                    Total <span class="list__count">$1.500,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__item">   
+                            <a class="order__item-remove" href="#">Remove item</a>
+                            <div class="order__item-name">G61-50T38</div>
+                            <div class="order__item-brand">Brand name</div>
+                            <div class="order__item-model">Model: 0000 <span class="divider">|</span>SKU: 0000000</div>
+                            <div class="order__item-descr">Description item</div>
+                            <div class="order__item-other">
+                                <div class="order__item-price">$1,500.00</div>
+                                    <div class="input-group input-group--qty input-group--sm ml-auto">
+                                    <a href="#" class="btn btn--white">
+                                        <span class="btn__ico btn__ico--minus"></span>
+                                    </a>
+                                    <input type="text" class="input-group__input" value="2">
+                                    <a href="#" class="btn btn--white">
+                                        <span class="btn__ico btn__ico--plus"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn--lg btn--green btn--block mt-auto">Checkout</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Swipe -->
+
+            <!-- Header -->
+            <header class="header">
+                <div class="header-inner container">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="header-logo">Dentalmed</div>
+                        </div>
+                        <div class="col d-none d-lg-block header-nav">
+                            <ul class="nav">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Catalog</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Orders</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Awaiting Approval</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Company</a>
+                                </li>
+                                <li class="nav__item ml-auto">
+                                    <a href="#" class="nav__link">Username</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-auto d-block d-lg-none ml-auto">
+                            <div class="header-nav-mobile">
+                                <a class="header__link" href="#">Bulk Order</a>
+                                <a class="header-toggle" data-name="mobile-menu"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>            
+            <!-- End Header -->
+
+            <!-- Main -->
+            <main class="main container">
+                <div class="order">
+                    <h1>Order summary</h1>
+                    <div class="accordion">
+                        <div class="accordion__item accordion__item--active">
+                            <div class="accordion__header">
+                                <div class="accordion__t">Details</div>
+                                <svg class="accordion__ico" width="13px" height="8px" viewBox="0 0 13 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Version-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Catalog" transform="translate(-1027.000000, -961.000000)" class="fill">
+                                            <polygon id="Fill-1" transform="translate(1033.414000, 964.914000) translate(-1033.414000, -964.914000) " points="1038.414 961 1033.415 966 1028.414 961 1027 962.414 1033.415 968.828 1039.828 962.414"></polygon>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="accordion__content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="list list--total">
+                                            <div class="list__item">
+                                                Subtotal <span class="list__count">$1,500.00</span>
+                                            </div>
+                                            <div class="list__item">
+                                                Shipping <span class="list__count">Free</span>
+                                            </div>
+                                            <div class="list__item">
+                                                Total <span class="list__count">$1.500,00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="list list--total">
+                                            <div class="list__item">
+                                                Created by <span class="list__count">Ivanov Pavel</span>
+                                            </div>
+                                            <div class="list__item">
+                                                Status <span class="list__count">Complete</span>
+                                            </div>
+                                            <div class="list__item">
+                                                Assigned to <span class="list__count">Dmitry Petrov</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                <div class="accordion__t">Order details</div>
+                                <svg class="accordion__ico" width="13px" height="8px" viewBox="0 0 13 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Version-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Catalog" transform="translate(-1027.000000, -961.000000)" class="fill">
+                                            <polygon id="Fill-1" transform="translate(1033.414000, 964.914000) translate(-1033.414000, -964.914000) " points="1038.414 961 1033.415 966 1028.414 961 1027 962.414 1033.415 968.828 1039.828 962.414"></polygon>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="accordion__content">
+                                <div class="order__item">   
+                                    <a class="order__item-remove" href="#">Remove item</a>
+                                    <div class="order__item-name">Dynarex Dental Impression Trays</div>
+                                    <div class="order__item-brand">Impression Tray</div>
+                                    <div class="order__item-model">Model: 2120 <span class="divider">|</span>SKU: 2039082</div>
+                                    <div class="order__item-descr">Case of 10 Bags with 12 per Bag</div>
+                                    <div class="order__item-other">
+                                        <div class="order__item-price">$38,400.00</div>
+                                            <div class="input-group input-group--qty input-group--sm ml-auto">
+                                            <a href="#" class="btn btn--white">
+                                                <span class="btn__ico btn__ico--minus"></span>
+                                            </a>
+                                            <input type="text" class="input-group__input" value="1920">
+                                            <a href="#" class="btn btn--white">
+                                                <span class="btn__ico btn__ico--plus"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__item">   
+                                    <a class="order__item-remove" href="#">Remove item</a>
+                                    <div class="order__item-name">Dynarex Dental Impression Trays</div>
+                                    <div class="order__item-brand">Impression Tray</div>
+                                    <div class="order__item-model">Model: 2120 <span class="divider">|</span>SKU: 2039082</div>
+                                    <div class="order__item-descr">Case of 10 Bags with 12 per Bag</div>
+                                    <div class="order__item-other">
+                                        <div class="order__item-price">$38,400.00</div>
+                                            <div class="input-group input-group--qty input-group--sm ml-auto">
+                                            <a href="#" class="btn btn--white">
+                                                <span class="btn__ico btn__ico--minus"></span>
+                                            </a>
+                                            <input type="text" class="input-group__input" value="1920">
+                                            <a href="#" class="btn btn--white">
+                                                <span class="btn__ico btn__ico--plus"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__item">   
+                                    <a class="order__item-remove" href="#">Remove item</a>
+                                    <div class="order__item-name">Dynarex Dental Impression Trays</div>
+                                    <div class="order__item-brand">Impression Tray</div>
+                                    <div class="order__item-model">Model: 2120 <span class="divider">|</span>SKU: 2039082</div>
+                                    <div class="order__item-descr">Case of 10 Bags with 12 per Bag</div>
+                                    <div class="order__item-other">
+                                        <div class="order__item-price">$38,400.00</div>
+                                            <div class="input-group input-group--qty input-group--sm ml-auto">
+                                            <a href="#" class="btn btn--white">
+                                                <span class="btn__ico btn__ico--minus"></span>
+                                            </a>
+                                            <input type="text" class="input-group__input" value="1920">
+                                            <a href="#" class="btn btn--white">
+                                                <span class="btn__ico btn__ico--plus"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                <div class="accordion__t">Order comments</div>
+                                <svg class="accordion__ico" width="13px" height="8px" viewBox="0 0 13 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Version-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Catalog" transform="translate(-1027.000000, -961.000000)" class="fill">
+                                            <polygon id="Fill-1" transform="translate(1033.414000, 964.914000) translate(-1033.414000, -964.914000) " points="1038.414 961 1033.415 966 1028.414 961 1027 962.414 1033.415 968.828 1039.828 962.414"></polygon>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="accordion__content">
+                                <div class="list list--comments">
+                                    <div class="list__item">
+                                        <div class="list__item-info">
+                                            <div class="list__item-author">Dmitriy Petrov</div>
+                                            <div class="list__item-date">21 Feb 2019 11:45</div>
+                                        </div>
+                                        <div class="list__item-status">All is good</div>
+                                    </div>
+                                    <div class="list__item">
+                                        <div class="list__item-info">
+                                            <div class="list__item-author">Dmitriy Petrov</div>
+                                            <div class="list__item-date">21 Feb 2019 11:45</div>
+                                        </div>
+                                        <div class="list__item-status">All is bad</div>
+                                    </div>
+                                    <div class="list__item">
+                                        <div class="list__item-info">
+                                            <div class="list__item-author">Dmitriy Petrov</div>
+                                            <div class="list__item-date">21 Feb 2019 11:45</div>
+                                        </div>
+                                        <div class="list__item-status">WTF</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn--blue">Add comment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__actions">
+                        <a href="#" class="btn btn--red btn--outline">Decline</a>
+                        <a href="#" class="btn btn--green">Checkout</a>
+                    </div>
+                </div>
+            </main>
+            <!-- End Main -->
+
+            <!-- Footer -->
+            <footer class="footer"></footer>
+            <!-- End Footer -->
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../build/assets/js/main.js"></script>
+
+    </body>
+</html>

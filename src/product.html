@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Useful meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="index, follow, noodp">
+        <meta name="googlebot" content="index, follow">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Procurement Portal / Bulk Order Pad</title>
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="../build/assets/css/style.min.css">
+    </head>
+    <body>
+
+        <div id="layout">
+            
+            <!-- Swipe -->
+            <div class="swipe swipe--category">
+                <div class="swipe__header">
+                    <div class="swipe__header-t">Category</div>
+                    <div class="swipe__close"></div>
+                </div>
+                <div class="swipe__body">
+                    <ul class="nav nav--category">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Dental Mouth Trays</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--active">Dental Mixing Pads</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Dental Tips</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swipe swipe--menu">
+                <div class="swipe__header">
+                    <div class="swipe__header-t">Username</div>
+                    <div class="swipe__close"></div>
+                </div>
+                <div class="swipe__body">
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--active">Catalog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Orders</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Awaiting Approval</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Company</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swipe swipe--order">
+                <div class="swipe__header">
+                    <div class="swipe__header-t">
+                        Order
+                        <a href="#" class="swipe__header-link">Remove all</a>
+                    </div>
+                    <div class="swipe__close"></div>
+                </div>
+                <div class="swipe__body">
+                    <div class="order">
+                        <div class="order__info">
+                            <div class="list list--total">
+                                <div class="list__item">
+                                    Subtotal <span class="list__count">$1,500.00</span>
+                                </div>
+                                <div class="list__item">
+                                    Shipping <span class="list__count free">Free</span>
+                                </div>
+                                <div class="list__item">
+                                    Total <span class="list__count">$1.500,00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__item">   
+                            <a class="order__item-remove" href="#">Remove item</a>
+                            <div class="order__item-name">G61-50T38</div>
+                            <div class="order__item-brand">Brand name</div>
+                            <div class="order__item-model">Model: 0000 <span class="divider">|</span>SKU: 0000000</div>
+                            <div class="order__item-descr">Description item</div>
+                            <div class="order__item-other">
+                                <div class="order__item-price">$1,500.00</div>
+                                    <div class="input-group input-group--qty input-group--sm ml-auto">
+                                    <a href="#" class="btn btn--white">
+                                        <span class="btn__ico btn__ico--minus"></span>
+                                    </a>
+                                    <input type="text" class="input-group__input" value="2">
+                                    <a href="#" class="btn btn--white">
+                                        <span class="btn__ico btn__ico--plus"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn--lg btn--green btn--block mt-auto">Checkout</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Swipe -->
+
+            <!-- Header -->
+            <header class="header">
+                <div class="header-inner container">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="header-logo">Dentalmed</div>
+                        </div>
+                        <div class="col d-none d-lg-block header-nav">
+                            <ul class="nav">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Catalog</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Orders</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Awaiting Approval</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Company</a>
+                                </li>
+                                <li class="nav__item ml-auto">
+                                    <a href="#" class="nav__link">Username</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-auto d-block d-lg-none ml-auto">
+                            <div class="header-nav-mobile">
+                                <a class="header__link" href="#">Bulk Order</a>
+                                <a class="header-toggle" data-name="mobile-menu"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>            
+            <!-- End Header -->
+
+            <!-- Main -->
+            <main class="main container">
+                <div class="content">
+                    <div class="row product">
+                        <div class="col-md-auto product__gallery">
+                            <div class="product__gallery-img"></div>
+                            <div class="list list--gallery">
+                                <div class="list__item">
+                                    <div class="list__img">
+                                        <img class="list__pic" src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="list__item">
+                                    <div class="list__img"></div>
+                                </div>
+                                <div class="list__item">
+                                    <div class="list__img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md product__info">
+                            <div class="product__general">
+                                <h1>Dynarex Dental Impression Trays</h1>
+                                <div class="product__brand">Impression Tray</div>
+                                <div class="product__descr">Case of 10 Bags with 12 per Bag</div>
+                                <div class="product__model">
+                                    Model: 2120
+                                    <span class="sku">SKU: 2039082</span>
+                                </div>
+                            </div>
+                            <div class="product__other">
+                                <div class="product__price">$40.00</div>
+                                <div class="product__qty">
+                                    <div class="input-group input-group--qty input-group--sm ml-auto">
+                                        <a href="#" class="btn btn--white">
+                                            <span class="btn__ico btn__ico--minus"></span>
+                                        </a>
+                                        <input type="text" class="input-group__input" value="2">
+                                        <a href="#" class="btn btn--white">
+                                            <span class="btn__ico btn__ico--plus"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none mt-auto">
+                        <div class="mobile-order" data-name="mobile-order">
+                            <div class="mobile-order__ico"></div>
+                            <div class="mobile-order__info">
+                                <div class="mobile-order__t">Your Order</div>
+                                <div class="mobile-order__descr">You have 1 items in your order</div>
+                            </div>
+                            <div class="mobile-order__price ml-auto">$1,500.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar sidebar--bg-gray d-none d-lg-block">
+                    <div class="sidebar__inner">
+                        <div class="sidebar__body order">
+                            <div class="order__info">
+                                <div class="order__t">
+                                    Your Order
+                                    <a href="#" class="order__t-link">Remove all</a>
+                                </div>
+                                <div class="order__text">You have 1 items in your order</div>
+                                <div class="list list--total">
+                                    <div class="list__item">
+                                        Subtotal <span class="list__count">$38,400.00</span>
+                                    </div>
+                                    <div class="list__item">
+                                        Shipping <span class="list__count free">Free</span>
+                                    </div>
+                                    <div class="list__item">
+                                        Total <span class="list__count">$38.400,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__item">   
+                                <a class="order__item-remove" href="#">Remove item</a>
+                                <div class="order__item-name">Dynarex Dental Impression Trays</div>
+                                <div class="order__item-brand">Impression Tray</div>
+                                <div class="order__item-model">Model: 2120 <span class="divider">|</span>SKU: 2039082</div>
+                                <div class="order__item-descr">Case of 10 Bags with 12 per Bag</div>
+                                <div class="order__item-other">
+                                    <div class="order__item-price">$38,400.00</div>
+                                        <div class="input-group input-group--qty input-group--sm ml-auto">
+                                        <a href="#" class="btn btn--white">
+                                            <span class="btn__ico btn__ico--minus"></span>
+                                        </a>
+                                        <input type="text" class="input-group__input" value="2">
+                                        <a href="#" class="btn btn--white">
+                                            <span class="btn__ico btn__ico--plus"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__footer">
+                            <a href="#" class="btn btn--green btn--block">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- End Main -->
+
+            <!-- Footer -->
+            <footer class="footer"></footer>
+            <!-- End Footer -->
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../build/assets/js/main.js"></script>
+
+    </body>
+</html>
