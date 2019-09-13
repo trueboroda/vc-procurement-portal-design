@@ -151,8 +151,8 @@
             <!-- End Header -->
 
             <!-- Main -->
-            <main class="main container">
-                <div class="order">
+            <main class="main container-fluid">
+                <div class="order order--with-info">
                     <h1>Order summary</h1>
                     <div class="accordion">
                         <div class="accordion__item accordion__item--active">
@@ -311,13 +311,69 @@
                         <a href="#" class="btn btn--red btn--outline">Decline</a>
                         <a href="#" class="btn btn--green">Checkout</a>
                     </div>
+                    <div class="footer">
+                        © 2019 VirtoCommerce. All Rights Reserved. <br>
+                        <a href="#">.NET ecommerce framework</a> by Virto
+                    </div>
+                    <div class="d-block d-lg-none">
+                        <div class="mobile-order" data-name="mobile-order">
+                            <div class="mobile-order__ico"></div>
+                            <div class="mobile-order__info">
+                                <div class="mobile-order__t">Your Order</div>
+                                <div class="mobile-order__descr">You have 1 items in your order</div>
+                            </div>
+                            <div class="mobile-order__price ml-auto">$1,500.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar sidebar--bg-gray d-none d-lg-block" data-name="right">
+                    <div class="sidebar__inner">
+                        <div class="sidebar__body order">
+                            <div class="order__info">
+                                <div class="order__t">
+                                    Your Order
+                                    <a href="#" class="order__t-link">Remove all</a>
+                                </div>
+                                <div class="order__text">You have 1 items in your order</div>
+                                <div class="list list--total">
+                                    <div class="list__item">
+                                        Subtotal <span class="list__count">$1,500.00</span>
+                                    </div>
+                                    <div class="list__item">
+                                        Shipping <span class="list__count free">Free</span>
+                                    </div>
+                                    <div class="list__item">
+                                        Total <span class="list__count">$1.500,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__item">   
+                                <a class="order__item-remove" href="#">Remove item</a>
+                                <div class="order__item-name">G61-50T38</div>
+                                <div class="order__item-brand">Brand name</div>
+                                <div class="order__item-model">Model: 0000 <span class="divider">|</span>SKU: 0000000</div>
+                                <div class="order__item-descr">Description item</div>
+                                <div class="order__item-other">
+                                    <div class="order__item-price">$1,500.00</div>
+                                        <div class="input-group input-group--qty input-group--sm ml-auto">
+                                        <a href="#" class="btn btn--white">
+                                            <span class="btn__ico btn__ico--minus"></span>
+                                        </a>
+                                        <input type="text" class="input-group__input" value="2">
+                                        <a href="#" class="btn btn--white">
+                                            <span class="btn__ico btn__ico--plus"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__footer">
+                            <a href="#" class="btn btn--green btn--block">Checkout</a>
+                        </div>
+                    </div>
                 </div>
             </main>
             <!-- End Main -->
-
-            <!-- Footer -->
-            <footer class="footer"></footer>
-            <!-- End Footer -->
 
         </div>
 

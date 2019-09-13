@@ -30,6 +30,11 @@
 	{
 		flex: 0 0 21.25rem;
 		min-width: 21.25rem;
+
+		@include media-breakpoint-up(md) {
+			flex: 0 0 13rem;
+			min-width: 13rem;
+		}
 	}
 
 	.col-w-260

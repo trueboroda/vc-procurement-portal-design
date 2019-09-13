@@ -1,0 +1,13 @@
+.footer
+{
+	font-size: .75rem;
+	margin-top: auto;
+	padding: .625rem 0;
+	text-align: center;
+
+	&--bg-black
+	{
+		background: $black;
+		color: $white;
+	}
+}
