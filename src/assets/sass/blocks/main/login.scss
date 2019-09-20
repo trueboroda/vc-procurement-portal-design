@@ -1,0 +1,37 @@
+.login-page
+{
+	align-items: center;
+	background-size: cover;
+	background-position: 50%;
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: center;
+}
+
+.login-form
+{
+	background: $white;
+	border-radius: $border-radius;
+	max-width: 21.625rem;
+	padding: 1.875rem;
+	width: 100%;
+
+	label
+	{
+		font-weight: 500;
+	}
+
+	.form-group
+	{
+		margin-bottom: 1rem;
+	}
+
+	.form-group:last-child
+	{
+		margin-bottom: 0;
+	}
+
+	@include media-breakpoint-down(xs) {
+		padding: 1.25rem;
+	}
+}
