@@ -31,6 +31,12 @@
 		margin-bottom: 0;
 	}
 
+	.forgot
+	{
+		font-size: .875rem;
+		margin-left: auto;
+	}
+
 	@include media-breakpoint-down(xs) {
 		padding: 1.25rem;
 	}
