@@ -156,19 +156,29 @@
                     <h1>Orders</h1>
                     <div class="row page__sort">
                         <div class="col-md-auto page__sort-date">
-                            From 
-                            <input type="text" class="form-control">
-                            To
-                            <input type="text" class="form-control">
+                            <div class="page__sort-col">
+                                <span class="page__sort-name">From</span>
+                                <div class="dropdown">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="page__sort-col">
+                                <span class="page__sort-name">To</span>
+                                <div class="dropdown">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-auto page__sort-filter">
-                            Filter by status
-                            <div class="dropdown">
-                                <div class="dropdown__toggle">All</div>
-                                <div class="dropdown__menu dropdown__menu--up">
-                                    <a href="#" class="dropdown__menu-item">All</a>
-                                    <a href="#" class="dropdown__menu-item">Completed</a>
-                                    <a href="#" class="dropdown__menu-item">Awaiting approwal</a>
+                            <div class="page__sort-col">
+                                <span class="page__sort-name">Filter by status</span>
+                                <div class="dropdown">
+                                    <div class="dropdown__toggle">All</div>
+                                    <div class="dropdown__menu dropdown__menu--up">
+                                        <a href="#" class="dropdown__menu-item">All</a>
+                                        <a href="#" class="dropdown__menu-item">Completed</a>
+                                        <a href="#" class="dropdown__menu-item">Awaiting approwal</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
