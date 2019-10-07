@@ -108,15 +108,17 @@ $colors: (
 
 $theme-colors: (
   primary: $blue,
+  blue: $blue,
   secondary: $gray-600,
   success: $green,
   green: $green,
   info: $cyan,
   warning: $yellow,
   danger: $red,
+  red: $red,
   purple: $purple,
   lime: $lime,
-  light: $gray-100,
+  light: $gray-200,
   dark: $gray-800
 ) !default;
 
@@ -175,7 +177,7 @@ $body-color:    $black !default;
 $link-color:            theme-color("primary") !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 15%) !default;
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 // Grid breakpoints

@@ -1,0 +1,40 @@
+[data-name="icon-plus"]
+{
+    background-image: url('../i/icons/plus.svg');
+}
+
+[data-name="icon-minus"]
+{
+    background-image: url('../i/icons/minus.svg');
+    height: .125rem;
+}
+
+[data-name="icon-plus-white"]
+{
+    background-image: url('../i/icons/plus-white.svg');
+}
+
+[data-name="icon-minus-white"]
+{
+    background-image: url('../i/icons/minus-white.svg');
+    height: .125rem;
+}
+
+[data-name="icon-trash"]
+{
+    background-image: url('../i/icons/trash.svg');
+}
+
+[data-name="icon-trash-gray"]
+{
+    background-image: url('../i/icons/trash-gray.svg');
+    height: 1.25rem;
+    width: 1rem;
+}
+
+[data-name="icon-trash"],
+[data-name="icon-trash-gray"]
+{
+    height: 1.25rem;
+    width: 1rem;
+}

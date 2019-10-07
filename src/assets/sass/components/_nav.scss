@@ -3,25 +3,25 @@
     display: flex;
     list-style: none;
 
-    &__link
+    &-link
     {
         color: inherit;
     }
 
-    &--category,
-    &--sub
+    &-category,
+    &-sub
     {
     	flex-direction: column;
     }
 
-    &--category
+    &-category
     {
-    	.nav__item
+    	.nav-item
     	{
     		border-bottom: 1px solid $gray-200;
     	}
 
-    	.nav__link
+    	.nav-link
     	{
     		align-items: center;
     		display: flex;
@@ -29,7 +29,7 @@
     		padding: 0 1.875rem;
     		position: relative;
 
-    		&--active
+    		&.active
     		{
     			color: $blue;
     			
@@ -44,7 +44,7 @@
 	    			width: .1875rem;
     			}
 
-                & ~ .nav--sub
+                & ~ .nav-sub
                 {
                     display: block;
                 }
@@ -52,18 +52,18 @@
     	}
     }
 
-    &--sub
+    &-sub
     {
         display: none;
     	padding-bottom: 1rem;
     	padding-left: 2.5rem;
 
-    	.nav__item
+    	.nav-item
     	{
     		border: none;
     	}
 
-    	.nav__link
+    	.nav-link
     	{
     		height: auto;
     		padding: .25rem 0;

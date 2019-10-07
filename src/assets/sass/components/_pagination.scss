@@ -1,54 +1,49 @@
-.pagination
+.page-item
 {
-	display: flex;
+	margin-left: -1px;
 
-	&__item
+	&.prev,
+	&.next
 	{
-		margin-left: -1px;
-
-		&--prev,
-		&--next
+		.page-link
 		{
-			.pagination__link
-			{
-				width: 5rem;
-			}
-		}
-
-		&:first-child
-		{
-			.pagination__link
-			{
-				border-top-left-radius: $border-radius;
-				border-bottom-left-radius: $border-radius;
-			}
-		}
-
-		&:last-child
-		{
-			.pagination__link
-			{
-				border-top-right-radius: $border-radius;
-				border-bottom-right-radius: $border-radius;
-			}
+			width: 5rem;
 		}
 	}
 
-	&__link
-	{
-		align-items: center;
-		border: 1px solid $gray-200;
-		color: inherit;
-		display: flex;
-		height: 2.5rem;
-		justify-content: center;
-		width: 2.5rem;
+	// &:first-child
+	// {
+	// 	.page-link
+	// 	{
+	// 		border-top-left-radius: $border-radius;
+	// 		border-bottom-left-radius: $border-radius;
+	// 	}
+	// }
 
-		&:hover
-		{
-			background: $blue;
-			border-color: $blue;
-			color: $white;
-		}
+	// &:last-child
+	// {
+	// 	.page-link
+	// 	{
+	// 		border-top-right-radius: $border-radius;
+	// 		border-bottom-right-radius: $border-radius;
+	// 	}
+	// }
+}
+
+.page-link
+{
+	align-items: center;
+	border: 1px solid $gray-200;
+	color: inherit;
+	display: flex;
+	height: 2.5rem;
+	justify-content: center;
+	width: 2.5rem;
+
+	&:hover
+	{
+		background: $blue;
+		border-color: $blue;
+		color: $white;
 	}
 }

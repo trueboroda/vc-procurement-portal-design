@@ -78,14 +78,16 @@ label
         border-color: darken($gray-400, 15%);
     }
 
-    &--error
+    &--error,
+    &.error
     {
         border-color: $red;
         color: $red;
     }
 
     @include media-breakpoint-up(md) {
-        &--code
+        &--code,
+        &.code
         {
             width: 6.25rem;
         }
@@ -96,118 +98,6 @@ label
 {
     color: $red;
     font-size: .875rem;
-}
-
-.input-group
-{
-    &--qty
-    {
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-
-        .btn
-        {
-            align-items: center;
-            border: none;
-            border-radius: 2.125rem;
-            display: flex;
-            justify-content: center;
-            height: 2.125rem;
-            padding: 0;
-            width: 2.125rem;
-        }
-
-        .input-group__input
-        {
-            background: none;
-            border: none;
-            height: 100%;
-            text-align: center;
-            width: 3.125rem;
-        }
-
-        .list__notify
-        {
-            margin-right: 1.25rem;
-            margin-top: 0;
-        }
-
-        .form-control--qty
-        {
-            margin-right: .9375rem;
-            width: 6.25rem;
-
-            @include media-breakpoint-down(sm) {
-                width: calc(100% - 3.1rem);
-            }
-        }
-
-        @include media-breakpoint-down(lg) {
-            .btn
-            {
-                border-radius: 1.625rem;
-                height: 1.625rem;
-                width: 1.625rem;
-
-                &__ico
-                {
-                    height: .75rem;
-                    width: .75rem;
-
-                    &--minus,
-                    &--minus-white
-                    {
-                        height: .125rem;
-                    }
-                }
-            }
-        }
-    }
-
-    &--sm
-    {
-        .btn
-        {
-            border-radius: 1.5rem;
-            height: 1.5rem;
-            width: 1.5rem;
-
-            &__ico
-            {
-                height: .625rem;
-                width: .625rem;
-
-                &--minus
-                {
-                    height: .125rem;
-                }
-            }
-        }
-    }
-
-    &.disabled
-    {
-        pointer-events: none;
-
-        .btn
-        {
-            background: $gray-100;
-
-            &__ico
-            {
-                &--plus
-                {
-                    background-image: url('../i/icons/plus-gray.svg');
-                }
-
-                &--minus
-                {
-                    background-image: url('../i/icons/minus-gray.svg');
-                }
-            }
-        }
-    }
 }
 
 .form-switch

@@ -63,7 +63,7 @@ $(function() {
 function openBulkOrderTab(self) {
 	var index = self.index();
 
-	self.addClass('btn--active').siblings().removeClass('btn--active');
+	self.addClass('btn-active').siblings().removeClass('btn-active');
 
 	$('.bulk-order__content').removeClass('bulk-order__content--active');
 	$('.bulk-order__content[data-index="' + index + '"]').addClass('bulk-order__content--active');

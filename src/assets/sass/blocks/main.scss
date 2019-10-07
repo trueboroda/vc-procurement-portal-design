@@ -27,10 +27,16 @@ $sidebar-width: 18.75rem;
     > .order,
     > .account
     {
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        margin: 0 auto 1rem;
         width: 100%;
+
+        > *
+        {
+            width: 100%;
+        }
         
         @media (min-width: 120rem) {
             width: calc(100% - 37.5rem);
@@ -162,7 +168,7 @@ $sidebar-width: 18.75rem;
     &__footer
     {
         margin-top: auto;
-        padding: .9375rem 1.25rem;
+        padding: .9375rem;
     }
 
     &[data-name="left"]
@@ -209,6 +215,11 @@ $sidebar-width: 18.75rem;
         padding: 0 1.875rem;
     }
 
+    .page-nav + .footer
+    {
+        margin-top: 1rem;
+    }
+
     @media (min-width: 120rem) {
         margin: 0 ($sidebar-width * 2);
 
@@ -226,6 +237,11 @@ $sidebar-width: 18.75rem;
     @include media-breakpoint-down(md) {
         border-right: 1px solid $gray-200;
         margin-right: -.9375rem;
+
+        .footer
+        {
+            margin-top: auto;
+        }
     }
 
     @include media-breakpoint-down(sm) {

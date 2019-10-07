@@ -43,13 +43,17 @@
 
 		&-remove
 		{
-			background: url('../i/icons/trash.svg') no-repeat scroll 0 0;
 			font-size: 0;
 			height: 1.25rem;
 			position: absolute;
 			right: .9375rem;
 			top: 1.25rem;
 			width: 1rem;
+
+			&:hover
+			{
+				filter: hue-rotate(200deg);
+			}
 		}
 	}
 

@@ -2,6 +2,7 @@
 {
 	font-size: .875rem;
 	padding: .9375rem;
+	width: 100%;
 
 	&__total
 	{
@@ -14,7 +15,8 @@
 		align-items: center;
 		display: flex;
 
-		.dropdown
+		.dropdown,
+		.dropup
 		{
 			margin: 0 .9375rem;
 		}

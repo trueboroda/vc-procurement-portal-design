@@ -24,25 +24,6 @@
         <div id="layout">
             
             <!-- Swipe -->
-            <div class="swipe swipe--category">
-                <div class="swipe__header">
-                    <div class="swipe__header-t">Category</div>
-                    <div class="swipe__close"></div>
-                </div>
-                <div class="swipe__body">
-                    <ul class="nav nav--category">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Dental Mouth Trays</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link nav__link--active">Dental Mixing Pads</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Dental Tips</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="swipe swipe--menu">
                 <div class="swipe__header">
                     <div class="swipe__header-t">Username</div>
@@ -50,65 +31,19 @@
                 </div>
                 <div class="swipe__body">
                     <ul class="nav">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link nav__link--active">Catalog</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Catalog</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Orders</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Orders</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Awaiting Approval</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Awaiting Approval</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Company</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Company</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <div class="swipe swipe--order">
-                <div class="swipe__header">
-                    <div class="swipe__header-t">
-                        Order
-                        <a href="#" class="swipe__header-link">Remove all</a>
-                    </div>
-                    <div class="swipe__close"></div>
-                </div>
-                <div class="swipe__body">
-                    <div class="order">
-                        <div class="order__info">
-                            <div class="list list--total">
-                                <div class="list__item">
-                                    Subtotal <span class="list__count">$1,500.00</span>
-                                </div>
-                                <div class="list__item">
-                                    Shipping <span class="list__count free">Free</span>
-                                </div>
-                                <div class="list__item">
-                                    Total <span class="list__count">$1.500,00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="order__item">   
-                            <a class="order__item-remove" href="#">Remove item</a>
-                            <div class="order__item-name">G61-50T38</div>
-                            <div class="order__item-brand">Brand name</div>
-                            <div class="order__item-model">Model: 0000 <span class="divider">|</span>SKU: 0000000</div>
-                            <div class="order__item-descr">Description item</div>
-                            <div class="order__item-other">
-                                <div class="order__item-price">$1,500.00</div>
-                                    <div class="input-group input-group--qty input-group--sm ml-auto">
-                                    <a href="#" class="btn btn--white">
-                                        <span class="btn__ico btn__ico--minus"></span>
-                                    </a>
-                                    <input type="text" class="input-group__input" value="2">
-                                    <a href="#" class="btn btn--white">
-                                        <span class="btn__ico btn__ico--plus"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn--lg btn--green btn--block mt-auto">Checkout</a>
-                    </div>
                 </div>
             </div>
             <!-- End Swipe -->
@@ -122,20 +57,20 @@
                         </div>
                         <div class="col d-none d-lg-block header-nav">
                             <ul class="nav">
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">Catalog</a>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Catalog</a>
                                 </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">Orders</a>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">Orders</a>
                                 </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">Awaiting Approval</a>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Awaiting Approval</a>
                                 </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">Company</a>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Company</a>
                                 </li>
-                                <li class="nav__item ml-auto">
-                                    <a href="#" class="nav__link">Username</a>
+                                <li class="nav-item ml-auto">
+                                    <a href="#" class="nav-link">Username</a>
                                 </li>
                             </ul>
                         </div>
@@ -173,11 +108,11 @@
                             <div class="page__sort-col">
                                 <span class="page__sort-name">Filter by status</span>
                                 <div class="dropdown">
-                                    <div class="dropdown__toggle">All</div>
-                                    <div class="dropdown__menu dropdown__menu--up">
-                                        <a href="#" class="dropdown__menu-item">All</a>
-                                        <a href="#" class="dropdown__menu-item">Completed</a>
-                                        <a href="#" class="dropdown__menu-item">Awaiting approwal</a>
+                                    <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</div>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">All</a>
+                                        <a href="#" class="dropdown-item">Completed</a>
+                                        <a href="#" class="dropdown-item">Awaiting approwal</a>
                                     </div>
                                 </div>
                             </div>
@@ -304,29 +239,29 @@
                             <div class="col-auto">
                                 <div class="page-nav__total">You've viewed 72 of 101 products</div>
                                 <div class="pagination">
-                                    <div class="pagination__item">
-                                        <a href="#" class="pagination__link pagination__link--active">1</a>
+                                    <div class="page-item">
+                                        <a href="#" class="page-link">1</a>
                                     </div>
-                                    <div class="pagination__item">
-                                        <a href="#" class="pagination__link">2</a>
+                                    <div class="page-item active">
+                                        <a href="#" class="page-link">2</a>
                                     </div>
-                                    <div class="pagination__item">
-                                        <a href="#" class="pagination__link">3</a>
+                                    <div class="page-item">
+                                        <a href="#" class="page-link">3</a>
                                     </div>
-                                    <div class="pagination__item pagination__item--next">
-                                        <a href="#" class="pagination__link">Next</a>
+                                    <div class="page-item next">
+                                        <a href="#" class="page-link">Next</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-auto ml-sm-auto">
                                 <div class="page-nav__count">
                                     Show
-                                    <div class="dropdown">
-                                        <div class="dropdown__toggle">30</div>
-                                        <div class="dropdown__menu dropdown__menu--up">
-                                            <a href="#" class="dropdown__menu-item">10</a>
-                                            <a href="#" class="dropdown__menu-item">20</a>
-                                            <a href="#" class="dropdown__menu-item">30</a>
+                                    <div class="dropup">
+                                        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">30</div>
+                                        <div class="dropdown-menu">
+                                            <a href="#" class="dropdown-item">10</a>
+                                            <a href="#" class="dropdown-item">20</a>
+                                            <a href="#" class="dropdown-item">30</a>
                                         </div>
                                     </div>
                                     Entries
@@ -348,6 +283,8 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <script src="../build/assets/js/main.js"></script>
 
     </body>

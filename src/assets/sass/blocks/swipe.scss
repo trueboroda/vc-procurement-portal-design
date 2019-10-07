@@ -66,15 +66,15 @@
 	}
 
 	.nav,
-	.nav--category
+	.nav-category
 	{
-		.nav__item
+		.nav-item
 		{
 			border-bottom: 1px solid $gray-200;
 			margin: 0 .9375rem;
 		}
 
-		.nav__link
+		.nav-link
 		{
 			align-items: center;
 			display: flex;
@@ -82,23 +82,28 @@
 			height: 2.5rem;
 			padding: 0;
 
-			&--active::after
+			&.active
 			{
-				display: none;
+				color: $blue;
+				
+				&::after
+				{
+					display: none;
+				}
 			}
 		}
 	}
 
-	.nav--sub
+	.nav-sub
 	{
 		padding-left: 0;
 
-		.nav__item
+		.nav-item
 		{
 			border: none;
 		}
 
-		.nav__link
+		.nav-link
 		{
 			height: auto;
 			padding: .25rem 0;

@@ -1,0 +1,137 @@
+.input-group
+{
+    .btn
+    {
+        align-items: center;
+        border: none;
+        border-radius: 2.125rem;
+        display: flex;
+        justify-content: center;
+        height: 2.125rem;
+        padding: 0;
+        width: 2.125rem;
+
+        &-light
+        {
+            background-color: $white;
+
+            &:hover
+            {
+                background-color: darken($white, 2%);
+            }
+        }
+    }
+
+    &.qty
+    {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: auto;
+
+        .form-control
+        {
+            background: none;
+            border: none;
+            height: 100%;
+            padding: 0;
+            text-align: center;
+            width: 3.125rem;
+        }
+
+        .list__notify
+        {
+            margin-right: 1.25rem;
+            margin-top: 0;
+        }
+
+        .form-control.qty
+        {
+            border: solid 1px $gray-400;
+            border-radius: .25rem;
+            height: 2.5rem;
+            margin-right: .9375rem;
+            width: 6.25rem;
+
+            & ~ .btn
+            {
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            .btn
+            {
+                border-radius: 1.625rem;
+                height: 1.625rem;
+                width: 1.625rem;
+
+                &-ico
+                {
+                    height: .75rem;
+                    width: .75rem;
+
+                    &[data-name="icon-minus"],
+                    &[data-name="icon-minus-white"]
+                    {
+                        height: .125rem;
+                    }
+
+                    &[data-name="icon-trash"],
+                    &[data-name="icon-trash-gray"]
+                    {
+                        height: 1.25rem;
+                        width: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &-sm
+    {
+        .btn
+        {
+            border-radius: 1.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+
+            &-ico
+            {
+                height: .625rem;
+                width: .625rem;
+
+                &[data-name="icon-minus"],
+                &[data-name="icon-minus-white"]
+                {
+                    height: .125rem;
+                }
+            }
+        }
+    }
+
+    &.disabled
+    {
+        pointer-events: none;
+
+        .btn
+        {
+            background: $gray-100;
+
+            &-ico
+            {
+                &[data-name="icon-plus"]
+                {
+                    background-image: url('../i/icons/plus-gray.svg');
+                }
+
+                &[data-name="icon-minus"]
+                {
+                    background-image: url('../i/icons/minus-gray.svg');
+                }
+            }
+        }
+    }
+}
