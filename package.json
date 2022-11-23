@@ -5,7 +5,7 @@
   "author": "virtocommerce",
   "devDependencies": {
     "bootstrap": "^4.0.0",
-    "browser-sync": "^2.18.2",
+    "browser-sync": "^2.27.10",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cssbeautify": "^0.1.3",
